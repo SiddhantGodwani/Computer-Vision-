@@ -1,0 +1,118 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs36\lang9\par
+Music Genre Classification Project Documentation\par
+
+\pard\sl276\slmult1\fs28 Introduction\b0\par
+This documentation outlines the details of a music genre classification project. The project aims to develop a machine learning model capable of accurately classifying music tracks into different genres based on their audio features. Specifically, this documentation focuses on comparing the performance of two different classification algorithms: K-Nearest Neighbors (KNN) and Naive Bayes.\par
+\par
+\b Purpose\b0\par
+The purpose of this project is to develop a robust machine learning model for music genre classification. By leveraging audio features extracted from music tracks, the model aims to accurately classify each track into one of several predefined genres. This classification capability serves several purposes:\par
+\par
+Music Recommendation Systems: Accurate genre classification enables the development of personalized music recommendation systems. By understanding the genre preferences of users, the system can suggest relevant tracks that match their tastes.\par
+\par
+Content Organization: Music streaming platforms and digital libraries can benefit from automated genre classification to organize their vast catalogs of music. This helps users discover new music within their preferred genres more efficiently.\par
+\par
+Market Segmentation: Understanding the popularity of different music genres among listeners can aid in market segmentation for music industry stakeholders. This information can inform marketing strategies, concert planning, and content creation.\par
+\par
+Academic Research: Music genre classification serves as a challenging problem in the field of audio signal processing and machine learning. Research in this area contributes to advancements in both music analysis techniques and classification algorithms.\par
+\par
+\b Objectives\b0\par
+The primary objectives of the project remain unchanged:\par
+\par
+Develop a Machine Learning Model: Build a robust machine learning model capable of accurately classifying music tracks into predefined genres.\par
+\par
+Utilize Audio Features: Extract relevant audio features from the music tracks to represent their characteristics effectively.\par
+\par
+Compare Model Performance: Evaluate and compare the performance of KNN and Naive Bayes classifiers to determine their effectiveness in music genre classification.\par
+\par
+\b Dataset\b0\par
+The project continues to use the "GTZAN Genre Collection" dataset, comprising 1000 audio tracks categorized into 10 different genres.\par
+\par
+\b Feature Extraction and Representation\b0\par
+Feature extraction is a crucial step in music genre classification, as it involves converting raw audio data into a format suitable for machine learning algorithms. The following features are commonly extracted from music tracks:\par
+\par
+Mel-Frequency Cepstral Coefficients (MFCCs): Captures the spectral characteristics of the audio signal.\par
+\par
+Spectral Centroid: Represents the "center of mass" of the spectrum and provides information about the brightness of the sound.\par
+\par
+Chroma Frequencies: Describes the distribution of energy across pitch classes (e.g., C, C#, D, etc.).\par
+\par
+Rhythm Patterns: Captures rhythmic information using techniques such as beat tracking and tempo estimation.\par
+\par
+These features are then represented as numerical vectors, forming the input data for the classification models.\par
+\par
+\b Model Architecture\b0\par
+K-Nearest Neighbors (KNN) Classifier:\par
+Algorithm: Utilizes a non-parametric approach for classification based on feature similarity.\par
+\par
+Training: Stores all training data points in memory.\par
+\par
+Inference: Predicts the class label of a test sample by a majority vote of its nearest neighbors in the feature space.\par
+\par
+\b Naive Bayes Classifier:\b0\par
+Algorithm: Based on Bayes' theorem and assumes independence between features.\par
+\par
+Assumption: Assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature.\par
+\par
+Training: Estimates class-conditional probabilities and prior probabilities from the training data.\par
+\par
+Inference: Calculates the posterior probability of each class given the input features and selects the class with the highest probability.\par
+\par
+\b Range of Factors in Genres to be Classified\b0\par
+The music genres to be classified encompass a wide range of factors, including but not limited to:\par
+\par
+Melody: The sequence of musical notes and their arrangement.\par
+\par
+Rhythm: The timing and tempo of musical patterns.\par
+\par
+Harmony: The combination of simultaneous musical notes to produce chords and chord progressions.\par
+\par
+Instrumentation: The types of musical instruments used in the composition.\par
+\par
+Vocal Style: The characteristics of vocal performances, including pitch, timbre, and delivery.\par
+\par
+These factors contribute to the distinctiveness of each genre and serve as the basis for classification.\par
+\b\par
+Solution\par
+\b0 The proposed solution involves implementing and comparing the performance of KNN and Naive Bayes classifiers for music genre classification:\par
+\par
+Feature Extraction: Extract relevant audio features from music tracks, including MFCCs, spectral centroid, and chroma frequencies.\par
+\par
+Model Training: Train KNN and Naive Bayes classifiers using the extracted features.\par
+\par
+Evaluation: Evaluate the performance of both classifiers using metrics such as accuracy, precision, recall, and F1-score.\par
+\par
+Comparison: Compare the performance of KNN and Naive Bayes classifiers to determine their effectiveness in classifying music genres.\par
+\par
+By following this approach, the project aims to identify the most suitable classification algorithm for music genre classification, providing insights into the strengths and limitations of each method.\par
+\par
+\par
+\par
+\par
+\par
+\b Methodology\par
+\b0 The methodology remains consistent with the previous documentation. However, instead of training multiple models with different algorithms, we will focus on implementing and evaluating KNN and Naive Bayes classifiers specifically.\par
+\par
+\b Implementation Details\b0\par
+\b K-Nearest Neighbors (KNN) Classifier\par
+\b0 Implementation: Utilize the KNN algorithm from the scikit-learn library.\par
+Parameters: Tune the number of neighbors (K) to optimize classification performance.\par
+Feature Space: Utilize the extracted audio features as input to the KNN classifier.\par
+\b Naive Bayes Classifier\b0\par
+Implementation: Implement the Gaussian Naive Bayes algorithm from the scikit-learn library.\par
+Assumption: Assume that features are conditionally independent given the class label.\par
+\b Feature Space\b0 : Utilize the same set of extracted audio features as input to the Naive Bayes classifier.\par
+\par
+\b Evaluation Metrics\b0\par
+The performance of both KNN and Naive Bayes classifiers will be evaluated using the following metrics:\par
+\par
+Accuracy: The proportion of correctly classified instances out of the total instances.\par
+Precision: The ratio of correctly predicted positive observations to the total predicted positives.\par
+Recall: The ratio of correctly predicted positive observations to all observations in the actual class.\par
+F1-score: The harmonic mean of precision and recall, providing a balance between the two metrics.\par
+\b\par
+Conclusion\b0\par
+By comparing the performance of KNN and Naive Bayes classifiers on the music genre classification task, we aim to determine the effectiveness of each algorithm in accurately classifying music tracks. This comparison will provide valuable insights into the suitability of different classification approaches for this specific task, ultimately contributing to the successful completion of the project\par
+}
+ 
